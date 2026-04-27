@@ -1,85 +1,159 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[600px] flex items-center justify-center bg-[#1a2b48] text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-           {/* Placeholder for hero image pattern/gradient */}
-           <div className="absolute inset-0 bg-gradient-to-br from-[#d4af37] to-transparent"></div>
+      <section className="relative h-[700px] flex items-center justify-center bg-[#1a2b48] text-white overflow-hidden">
+        {/* Animated Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{ 
+            backgroundImage: 'radial-gradient(#d4af37 1px, transparent 1px)', 
+            backgroundSize: '40px 40px' 
+          }}></div>
         </div>
-        <div className="relative z-10 max-w-4xl px-4 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#d4af37]/10 to-transparent skew-x-12 transform translate-x-1/4"></div>
+        
+        <div className="relative z-10 max-w-5xl px-4 text-center">
+          <div className="inline-block bg-[#d4af37] text-[#1a2b48] px-4 py-1 rounded-full text-sm font-bold mb-6 tracking-widest uppercase">
+            Est. 1952 • Excellence in Education
+          </div>
+          <h1 className="text-5xl md:text-8xl font-bold mb-8 leading-tight">
             Nurturing Excellence, <br />
             <span className="text-[#d4af37]">Building Futures.</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-10 text-gray-200">
+          <p className="text-xl md:text-2xl mb-12 text-gray-200 max-w-3xl mx-auto leading-relaxed">
             Welcome to Complex High School, where students are challenged to think critically, 
-            lead with integrity, and serve with compassion.
+            lead with integrity, and serve with compassion in a global community.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-[#d4af37] hover:bg-[#c4a027] text-[#1a2b48] font-bold py-4 px-8 rounded-lg transition-colors text-lg shadow-xl">
-              Apply Now
-            </button>
-            <button className="border-2 border-white hover:bg-white hover:text-[#1a2b48] text-white font-bold py-4 px-8 rounded-lg transition-all text-lg">
-              Virtual Tour
-            </button>
+          <div className="flex flex-col sm:flex-row justify-center gap-6">
+            <Link to="/admissions" className="bg-[#d4af37] hover:bg-white text-[#1a2b48] font-bold py-5 px-10 rounded-xl transition-all text-lg shadow-2xl transform hover:-translate-y-1">
+              Apply for 2026
+            </Link>
+            <Link to="/about" className="border-2 border-white/30 hover:border-white hover:bg-white/10 text-white font-bold py-5 px-10 rounded-xl transition-all text-lg backdrop-blur-sm">
+              Learn Our Story
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-[#1a2b48] mb-2">1,200+</div>
-              <div className="text-gray-600 font-medium">Current Students</div>
+      <section className="py-24 bg-white relative z-20 -mt-12 mx-4 md:mx-auto max-w-6xl rounded-3xl shadow-2xl border border-gray-100">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
+            <div className="text-center border-r border-gray-100 last:border-0">
+              <div className="text-5xl font-extrabold text-[#1a2b48] mb-3">1,200+</div>
+              <div className="text-gray-500 font-semibold tracking-wide uppercase text-sm">Students</div>
+            </div>
+            <div className="text-center border-r border-gray-100 last:border-0">
+              <div className="text-5xl font-extrabold text-[#1a2b48] mb-3">95+</div>
+              <div className="text-gray-500 font-semibold tracking-wide uppercase text-sm">Faculty</div>
+            </div>
+            <div className="text-center border-r border-gray-100 last:border-0">
+              <div className="text-5xl font-extrabold text-[#1a2b48] mb-3">15:1</div>
+              <div className="text-gray-500 font-semibold tracking-wide uppercase text-sm">Ratio</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-[#1a2b48] mb-2">95+</div>
-              <div className="text-gray-600 font-medium">Expert Faculty</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-[#1a2b48] mb-2">40+</div>
-              <div className="text-gray-600 font-medium">Sports & Clubs</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-[#1a2b48] mb-2">98%</div>
-              <div className="text-gray-600 font-medium">College Acceptance</div>
+              <div className="text-5xl font-extrabold text-[#1a2b48] mb-3">98%</div>
+              <div className="text-gray-500 font-semibold tracking-wide uppercase text-sm">Grad Rate</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* News & Events Section */}
-      <section className="py-20">
+      {/* Values Section */}
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-end mb-12">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1a2b48]">Upcoming Events</h2>
-              <div className="h-1.5 w-20 bg-[#d4af37] mt-4"></div>
-            </div>
-            <a href="#" className="text-[#1a2b48] font-bold hover:underline mb-2">View All Events &rarr;</a>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-[#1a2b48] mb-4">Our Core Values</h2>
+            <div className="h-1.5 w-24 bg-[#d4af37] mx-auto"></div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {[
+              { title: 'Academic Excellence', desc: 'Rigorous curriculum designed to inspire curiosity and critical thinking.', icon: '🎓' },
+              { title: 'Global Citizenship', desc: 'Fostering understanding and responsibility in an interconnected world.', icon: '🌍' },
+              { title: 'Character & Integrity', desc: 'Building strong moral foundations through service and leadership.', icon: '⚖️' }
+            ].map((value, idx) => (
+              <div key={idx} className="bg-white p-10 rounded-2xl shadow-sm hover:shadow-xl transition-all border-b-4 border-[#d4af37]">
+                <div className="text-4xl mb-6">{value.icon}</div>
+                <h3 className="text-2xl font-bold text-[#1a2b48] mb-4">{value.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{value.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* News & Events Section */}
+      <section className="py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-4">
+            <div className="text-center md:text-left">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1a2b48]">Campus Highlights</h2>
+              <p className="text-gray-500 mt-2">Stay updated with the latest happenings at Complex High</p>
+            </div>
+            <a href="#" className="bg-[#1a2b48] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#d4af37] hover:text-[#1a2b48] transition-all">View All News</a>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {[1, 2, 3].map((item) => (
-              <div key={item} className="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <div className="h-48 bg-gray-200"></div>
-                <div className="p-6">
-                  <div className="text-sm font-bold text-[#d4af37] mb-2 uppercase tracking-wider">May {item + 10}, 2026</div>
-                  <h3 className="text-xl font-bold text-[#1a2b48] mb-3">Academic Showcase & Career Fair</h3>
-                  <p className="text-gray-600 mb-4">
-                    Join us for an evening of showcasing our students' projects and meeting with local industry professionals.
+              <div key={item} className="group bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="h-56 bg-gray-200 relative overflow-hidden">
+                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                   <div className="absolute bottom-4 left-4 text-white font-bold bg-[#d4af37] px-3 py-1 rounded text-sm">
+                     {item === 1 ? 'Academics' : item === 2 ? 'Athletics' : 'Arts'}
+                   </div>
+                </div>
+                <div className="p-8">
+                  <div className="text-sm font-bold text-gray-400 mb-3 uppercase tracking-widest">May {item + 10}, 2026</div>
+                  <h3 className="text-2xl font-bold text-[#1a2b48] mb-4 group-hover:text-[#d4af37] transition-colors">
+                    {item === 1 ? 'Annual Science & Tech Fair' : item === 2 ? 'Gladiators Win Regional Finals' : 'Spring Theater Production'}
+                  </h3>
+                  <p className="text-gray-600 mb-6 line-clamp-2">
+                    Our students continue to demonstrate exceptional talent and dedication across all departments...
                   </p>
-                  <a href="#" className="text-[#1a2b48] font-medium hover:text-[#d4af37] flex items-center">
-                    Learn More <span className="ml-2">&rarr;</span>
+                  <a href="#" className="text-[#1a2b48] font-bold hover:text-[#d4af37] flex items-center transition-colors">
+                    Read Full Story <span className="ml-2 group-hover:translate-x-2 transition-transform">&rarr;</span>
                   </a>
                 </div>
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-24 bg-[#1a2b48] text-white overflow-hidden relative">
+        <div className="absolute top-0 left-0 w-64 h-64 bg-[#d4af37] opacity-5 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="max-w-5xl mx-auto px-4 text-center relative z-10">
+          <h2 className="text-3xl md:text-5xl font-bold mb-16">Community Voices</h2>
+          <div className="bg-white/5 backdrop-blur-lg p-12 rounded-3xl border border-white/10 italic text-xl md:text-2xl leading-relaxed">
+            "Choosing Complex High was the best decision for my daughter's future. The balance between 
+            academic rigor and personal support is truly unique. She has grown not just as a student, 
+            but as a confident leader."
+            <div className="mt-8 not-italic">
+              <div className="font-bold text-[#d4af37]">James Anderson</div>
+              <div className="text-sm text-gray-400 uppercase tracking-widest mt-1">Class of 2025 Parent</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter Section */}
+      <section className="py-24 bg-[#d4af37]">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1a2b48] mb-4">Stay Connected</h2>
+          <p className="text-[#1a2b48]/80 text-lg mb-10">Join our newsletter to receive monthly updates and event invitations.</p>
+          <form className="flex flex-col sm:flex-row gap-4">
+            <input 
+              type="email" 
+              placeholder="Enter your email" 
+              className="flex-grow px-6 py-4 rounded-xl border-none focus:ring-4 focus:ring-[#1a2b48]/20 outline-none text-lg"
+            />
+            <button className="bg-[#1a2b48] text-white font-bold py-4 px-10 rounded-xl hover:bg-white hover:text-[#1a2b48] transition-all text-lg">
+              Subscribe
+            </button>
+          </form>
         </div>
       </section>
     </div>
