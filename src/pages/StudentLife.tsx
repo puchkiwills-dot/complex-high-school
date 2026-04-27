@@ -2,10 +2,10 @@ import React from 'react';
 
 const StudentLife: React.FC = () => {
   const activities = [
-    { title: 'Athletics', description: 'Over 20 varsity sports including basketball, soccer, and track.', icon: '🏆' },
-    { title: 'Clubs & Societies', description: 'From Robotics to Debate, find your passion among 40+ student-led clubs.', icon: '🤝' },
-    { title: 'Arts & Music', description: 'Award-winning choir, orchestra, and vibrant visual arts programs.', icon: '🎨' },
-    { title: 'Leadership', description: 'Student Council and mentorship programs to develop tomorrow\'s leaders.', icon: '⭐' },
+    { title: 'Athletics', description: 'Over 20 varsity sports including basketball, soccer, and track.' },
+    { title: 'Clubs & Societies', description: 'From Robotics to Debate, find your passion among 40+ student-led clubs.' },
+    { title: 'Arts & Music', description: 'Award-winning choir, orchestra, and vibrant visual arts programs.' },
+    { title: 'Leadership', description: 'Student Council and mentorship programs to develop tomorrow\'s leaders.' },
   ];
 
   return (
@@ -25,7 +25,6 @@ const StudentLife: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {activities.map((act, idx) => (
             <div key={idx} className="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-center hover:bg-white hover:shadow-xl transition-all group">
-              <div className="text-5xl mb-6 group-hover:scale-110 transition-transform">{act.icon}</div>
               <h3 className="text-xl font-bold text-[#1a2b48] mb-3">{act.title}</h3>
               <p className="text-gray-600">{act.description}</p>
             </div>

@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-bold text-[#1a2b48]">Address</h3>
-                <p className="text-gray-600">123 Education Ave, Scholastic City, ST 12345</p>
+                <p className="text-gray-600">Chepseon, Kipkelion East, Kericho County</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">

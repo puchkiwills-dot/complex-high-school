@@ -2,10 +2,10 @@ import React from 'react';
 
 const About: React.FC = () => {
   const leadership = [
-    { name: 'Dr. Sarah Johnson', role: 'Principal', image: '👩‍🏫' },
-    { name: 'Michael Chen', role: 'Vice Principal, Academics', image: '👨‍🏫' },
-    { name: 'Elizabeth Smith', role: 'Dean of Students', image: '👩‍💼' },
-    { name: 'Robert Wilson', role: 'Athletic Director', image: '👨‍コーチ' },
+    { name: 'Dr. Sarah Johnson', role: 'Principal', image: 'SJ' },
+    { name: 'Michael Chen', role: 'Vice Principal, Academics', image: 'MC' },
+    { name: 'Elizabeth Smith', role: 'Dean of Students', image: 'ES' },
+    { name: 'Robert Wilson', role: 'Athletic Director', image: 'RW' },
   ];
 
   return (
@@ -22,19 +22,17 @@ const About: React.FC = () => {
           <div>
             <h2 className="text-3xl font-bold text-[#1a2b48] mb-6 border-l-8 border-[#d4af37] pl-4">Our Mission</h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              Founded in 1952, Complex High School has a long-standing tradition of academic excellence and 
-              community involvement. Our mission is to provide a safe, supportive, and challenging learning 
-              environment that empowers all students to reach their full potential.
+              To develop well-rounded, confident and responsible individuals through quality education.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              We believe in the power of curiosity, the importance of integrity, and the value of 
-              service. Our graduates go on to attend some of the world's most prestigious universities 
-              and lead impactful careers.
+              Founded in 1952, Complex High School has a long-standing tradition of academic excellence and 
+              community involvement. We believe in the power of curiosity, the importance of integrity, and the value of 
+              service.
             </p>
           </div>
           <div className="bg-gray-100 h-80 rounded-3xl relative overflow-hidden flex items-center justify-center">
              <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#1a2b48 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
-             <div className="text-8xl">🏫</div>
+             <div className="text-8xl font-bold text-[#1a2b48]/20">CHS</div>
           </div>
         </div>
       </section>

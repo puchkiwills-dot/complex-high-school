@@ -30,7 +30,7 @@ const Footer = () => {
           <div>
             <h3 className="text-[#d4af37] font-bold mb-4 uppercase tracking-wider">Contact Info</h3>
             <ul className="space-y-2 text-gray-300">
-              <li>123 Education Ave, Scholastic City</li>
+              <li>Chepseon, Kipkelion East, Kericho County</li>
               <li>Phone: (555) 123-4567</li>
               <li>Email: info@complexhigh.edu</li>
               <li>Office Hours: 8:00 AM - 4:00 PM</li>
