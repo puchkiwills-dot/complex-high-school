@@ -6,6 +6,7 @@ import Academics from './pages/Academics';
 import Admissions from './pages/Admissions';
 import Contact from './pages/Contact';
 import StudentLife from './pages/StudentLife';
+import Alumni from './pages/Alumni';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/student-life" element={<StudentLife />} />
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/alumni" element={<Alumni />} />
         </Routes>
       </Layout>
     </Router>

@@ -10,6 +10,7 @@ const Navbar = () => {
     { name: 'Academics', path: '/academics' },
     { name: 'Student Life', path: '/student-life' },
     { name: 'Admissions', path: '/admissions' },
+    { name: 'Alumni', path: '/alumni' },
     { name: 'Contact', path: '/contact' },
   ];
 

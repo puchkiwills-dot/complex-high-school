@@ -25,14 +25,13 @@ const Footer = () => {
               <li><Link to="/academics" className="hover:text-white transition-colors">Academics</Link></li>
               <li><Link to="/student-life" className="hover:text-white transition-colors">Student Life</Link></li>
               <li><Link to="/admissions" className="hover:text-white transition-colors">Admissions</Link></li>
+              <li><Link to="/alumni" className="hover:text-white transition-colors">Alumni</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-[#d4af37] font-bold mb-4 uppercase tracking-wider">Contact Info</h3>
             <ul className="space-y-2 text-gray-300">
               <li>Chepseon, Kipkelion East, Kericho County</li>
-              <li>Phone: (555) 123-4567</li>
-              <li>Email: info@complexhigh.edu</li>
               <li>Office Hours: 8:00 AM - 4:00 PM</li>
             </ul>
           </div>

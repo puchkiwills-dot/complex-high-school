@@ -141,23 +141,6 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Newsletter Section */}
-      <section className="py-24 bg-[#d4af37]">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1a2b48] mb-4">Stay Connected</h2>
-          <p className="text-[#1a2b48]/80 text-lg mb-10">Join our newsletter to receive monthly updates and event invitations.</p>
-          <form className="flex flex-col sm:flex-row gap-4">
-            <input 
-              type="email" 
-              placeholder="Enter your email" 
-              className="flex-grow px-6 py-4 rounded-xl border-none focus:ring-4 focus:ring-[#1a2b48]/20 outline-none text-lg"
-            />
-            <button className="bg-[#1a2b48] text-white font-bold py-4 px-10 rounded-xl hover:bg-white hover:text-[#1a2b48] transition-all text-lg">
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </section>
     </div>
   );
 };
