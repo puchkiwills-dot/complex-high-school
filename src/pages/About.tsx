@@ -2,10 +2,10 @@ import React from 'react';
 
 const About: React.FC = () => {
   const leadership = [
-    { name: 'Dr. Sarah Johnson', role: 'Principal', image: 'SJ' },
-    { name: 'Michael Chen', role: 'Vice Principal, Academics', image: 'MC' },
-    { name: 'Elizabeth Smith', role: 'Dean of Students', image: 'ES' },
-    { name: 'Robert Wilson', role: 'Athletic Director', image: 'RW' },
+    { name: 'Dr. Beatrice Koech', role: 'Principal', image: 'BK' },
+    { name: 'Mr. Peter Langat', role: 'Vice Principal, Academics', image: 'PL' },
+    { name: 'Ms. Catherine Chebet', role: 'Dean of Students', image: 'CC' },
+    { name: 'Mr. Samuel Kirui', role: 'Athletic Director', image: 'SK' },
   ];
 
   return (
@@ -70,7 +70,7 @@ const About: React.FC = () => {
           <div className="flex items-center">
             <div className="w-16 h-1 bg-[#d4af37] mr-4"></div>
             <div>
-              <div className="text-xl font-bold">Dr. Sarah Johnson</div>
+              <div className="text-xl font-bold">Dr. Beatrice Koech</div>
               <div className="text-[#d4af37]">Principal</div>
             </div>
           </div>

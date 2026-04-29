@@ -3,14 +3,14 @@ import React from 'react';
 const Alumni: React.FC = () => {
   const alumniStories = [
     {
-      name: 'Jane Doe',
+      name: 'Faith Chepngetich',
       year: 'Class of 2015',
-      story: 'After graduating from Complex High, Jane went on to study Medicine at the University of Nairobi. She is now a resident doctor at Kericho County Referral Hospital.',
+      story: 'After graduating from Complex High, Faith went on to study Medicine at the University of Nairobi. She is now a resident doctor at Kericho County Referral Hospital.',
     },
     {
-      name: 'John Smith',
+      name: 'David Kiprop',
       year: 'Class of 2010',
-      story: 'John pursued Engineering and is now a lead project manager at a top infrastructure firm in East Africa. He credits his leadership skills to his time in the Student Council.',
+      story: 'David pursued Engineering and is now a lead project manager at a top infrastructure firm in East Africa. He credits his leadership skills to his time in the Student Council.',
     },
     {
       name: 'Mary Wambui',
