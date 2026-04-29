@@ -30,13 +30,13 @@ const Academics: React.FC = () => {
       </div>
 
       <div className="mt-20 bg-[#1a2b48] text-white p-12 rounded-2xl shadow-xl">
-        <h2 className="text-3xl font-bold mb-6">Advanced Placement (AP)</h2>
+        <h2 className="text-3xl font-bold mb-6">KCSE Excellence</h2>
         <p className="text-xl text-gray-300 mb-8 max-w-2xl">
-          We offer over 15 AP courses across various disciplines, allowing students to earn 
-          college credit while still in high school.
+          We follow the Kenya Certificate of Secondary Education (KCSE) curriculum, consistently 
+          achieving top results and preparing students for university placement.
         </p>
         <button className="bg-[#d4af37] text-[#1a2b48] font-bold py-3 px-6 rounded-lg hover:bg-white transition-colors">
-          Download Curriculum Guide
+          View Subject Offerings
         </button>
       </div>
     </div>

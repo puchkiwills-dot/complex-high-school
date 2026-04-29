@@ -43,16 +43,16 @@ const StudentLife: React.FC = () => {
              </div>
           </div>
           <div className="lg:w-1/2 p-12 lg:p-16 flex flex-col justify-center">
-            <h2 className="text-3xl font-bold text-white mb-6">Home of the Gladiators</h2>
+            <h2 className="text-3xl font-bold text-white mb-6">Home of the Highland Eagles</h2>
             <p className="text-gray-300 text-lg mb-8">
               Our athletics program emphasizes teamwork, discipline, and sportsmanship. 
               With state-of-the-art facilities and experienced coaches, our teams 
               consistently compete at the highest levels.
             </p>
             <div className="flex flex-wrap gap-4">
-              <span className="bg-[#d4af37]/20 text-[#d4af37] px-4 py-2 rounded-full font-medium border border-[#d4af37]/30">15+ State Titles</span>
+              <span className="bg-[#d4af37]/20 text-[#d4af37] px-4 py-2 rounded-full font-medium border border-[#d4af37]/30">15+ Regional Titles</span>
               <span className="bg-[#d4af37]/20 text-[#d4af37] px-4 py-2 rounded-full font-medium border border-[#d4af37]/30">Elite Facilities</span>
-              <span className="bg-[#d4af37]/20 text-[#d4af37] px-4 py-2 rounded-full font-medium border border-[#d4af37]/30">Scholarship Focus</span>
+              <span className="bg-[#d4af37]/20 text-[#d4af37] px-4 py-2 rounded-full font-medium border border-[#d4af37]/30">Youth Development</span>
             </div>
           </div>
         </div>
